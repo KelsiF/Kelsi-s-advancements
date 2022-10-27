@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:oak_sapling"
+    },
+    "title": "Эколог",
+    "description": "Будущее дерево",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "sampling_get": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:oak_sapling"
+              "minecraft:spruce_sapling"
+              "minecraft:birch_sapling"
+              "minecraft:jungle_sapling"
+              "minecraft:dark_oak_sapling"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 20
+  },
+  "parent": "kelsis_advancements:yellow_axolotl"
+}
